@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans Osmanya', sans-serif;
+    width: auto;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+/* --------------- Header ------------------- */
+
+.header-container {
+    height: 20%;
+    color: white;
+    background-color: rgb(44,62,80);
+}
+
+nav {
+    display: flex;
+    width: 50%;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 80%;
+    & ul {
+        flex-wrap: wrap;
+        margin-top: 30px;
+        width: 100%;
+        font-size: large;
+        gap: 10%;
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+    }
+    & a {
+        text-decoration: none;
+        color: white;
+        font-size: 90%;
+    }
+
+    & li:hover {
+        text-decoration: underline;
+    }
+}
+
+
+/*---------------------- premiere section  */
+.start-css-section {
+    background-color: rgb(220,53,69);
+    color: white;
+
+}
+
+/* ---------------------- */
+
+section {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.portfolio-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio-images-line {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+    & img {
+        width: 25%;
+        border-radius: 10%;
+    }
+}
+
+.contact-section-content {
+    padding-bottom: 10%;
+}
+form {
+    & > input {
+        margin: 10px;
+        padding: 2%;
+        border: none;
+        border-bottom: 1px solid lightgray;
+        box-sizing: border-box;
+        width: 50%;
+        &:focus {
+            background-color: rgb(254, 238, 238);
+            transition: 1s;
+        }
+    }
+    & > textarea {
+        margin-top: 30px;
+        width: 40%;
+        padding: 2%;
+        border: none;
+        border-bottom: 1px solid rgb(212, 203, 203);
+        resize: none;
+    }
+
+    & button {
+        margin: 10px;
+        padding: 2%;
+        border: none;
+        border-bottom: 1px solid lightgray;
+        border-radius: 20px;
+        background-color: rgb(220,53,69);
+        color: white;
+        cursor: pointer;
+    }
+    
+}
+/* ----------------------------------------- */
+
+.about-section-container {
+    background-color: rgb(220,53,69);
+    color: white;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.about-section-content {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    text-align: left;
+    & p {
+        width: 33%;
+    }
+
+}
+
+/* ---------------------- FOOTER */
+.footer-informations {
+    padding-top: 8%;
+    padding-bottom: 8%;
+    justify-content: center;
+    background-color: rgb(44,62,80);
+    color: white;
+    display: flex;
+    gap: 9%;
+    & > div {
+        text-align: center;
+        justify-content: center;
+        display: inline;
+        width: 20%;
+        font-size: 60%;
+    }
+}
+
+.footer-informations-about {
+    justify-content: center;
+    text-align: center;
+    & > p {
+        margin-left: 10%;
+        width: 80%;
+        & > a {
+            color: rgb(26,188,156);
+        }
+    }
+    
+}
+
+.footer-informations-web > a {
+    padding: 5px;
+    & > img {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+    }
+}
+/* -- copyrights footer */
+.footer-copyrights {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    color: white;
+    background-color: rgb(26,37,47);
+}
